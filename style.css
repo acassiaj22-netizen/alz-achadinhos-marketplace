@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -7,161 +6,131 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #0f0f11;
-    color: #f1f1f1;
+    background-color: #f3f4f6;
+    color: #1f2937;
     line-height: 1.6;
 }
 
-/* Header */
-.header {
-    text-align: center;
-    padding: 2rem 1rem;
-    background: linear-gradient(135deg, #1a1a1c 0%, #0f0f11 100%);
-    border-bottom: 1px solid #333;
-}
-
-.header h1 {
-    font-size: 2rem;
-    font-weight: 900;
-    color: #fff;
-    margin-bottom: 0.5rem;
-}
-
-.header p {
-    color: #aaa;
-    font-size: 0.95rem;
-}
-
-/* Container */
 .container {
-    /* Simulação mobile-first, mas usaremos max-width no container */
     max-width: 600px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
+    background: #ffffff;
+    min-height: 100vh;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-/* Seções */
-section {
-    margin-bottom: 3rem;
-}
-
-h2 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: #fff;
-    border-left: 4px solid #ff4500;
-    padding-left: 0.5rem;
-}
-
-/* Grid de Botões */
-.buttons-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
+/* HERO SECTION */
+.hero {
     text-align: center;
-    transition: transform 0.2s, opacity 0.2s;
+    margin-bottom: 2.5rem;
 }
 
-.btn:hover {
-    transform: translateY(-2px);
-    opacity: 0.9;
+.hero h1 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 1rem;
+    line-height: 1.3;
 }
 
-.btn-shopee { background-color: #ee4d2d; }
-.btn-ml { background-color: #fff159; color: #333; }
-.btn-magalu { background-color: #0086ff; }
-.btn-kiwify { background-color: #5865F2; }
-
-/* Produtos Grid */
-.products-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.hero p {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
 }
 
-.product-card {
-    background-color: #1a1a1c;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #333;
-}
-
-.product-image {
-    position: relative;
-    width: 100%;
-    height: 250px;
-    background-color: #222;
-}
-
-.product-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.badge {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: rgba(255, 69, 0, 0.9);
-    color: #fff;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: bold;
-}
-
-.product-info {
-    padding: 1.5rem;
-}
-
-.product-title {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    color: #fff;
-}
-
-.product-description {
-    font-size: 0.9rem;
-    color: #aaa;
-    margin-bottom: 1.5rem;
-}
-
-.btn-affiliate {
+/* BUTTONS */
+.btn-primary, .btn-secondary {
     display: block;
     width: 100%;
     text-align: center;
-    background-color: #22c55e;
-    color: #000;
     padding: 1rem;
     border-radius: 8px;
     text-decoration: none;
-    font-weight: 900;
-    font-size: 1.1rem;
-    transition: transform 0.2s;
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition: transform 0.2s, background-color 0.2s;
+    margin-bottom: 1rem;
 }
 
-.btn-affiliate:hover {
-    transform: scale(1.02);
+.btn-primary {
+    background-color: #22c55e;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(34, 197, 94, 0.3);
+}
+
+.btn-primary:hover {
     background-color: #16a34a;
+    transform: translateY(-2px);
 }
 
-/* Footer */
-.footer {
+.btn-secondary {
+    background-color: #f3f4f6;
+    color: #374151;
+    border: 1px solid #d1d5db;
+}
+
+.btn-secondary:hover {
+    background-color: #e5e7eb;
+    transform: translateY(-2px);
+}
+
+/* TYPOGRAPHY & SPACING */
+h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.benefits, .how-it-works, .secondary-cta, .final-cta {
+    margin-bottom: 2.5rem;
+}
+
+/* BENEFITS LIST */
+.benefits ul {
+    list-style-type: none;
+}
+
+.benefits li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #4b5563;
+}
+
+.benefits li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.how-it-works p {
+    color: #4b5563;
+}
+
+/* FINAL CTA BOX */
+.final-cta {
     text-align: center;
-    padding: 2rem 1rem;
-    color: #666;
-    font-size: 0.8rem;
-    border-top: 1px solid #333;
+    background: #f9fafb;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.final-cta h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* DISCLAIMER */
+.disclaimer {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #9ca3af;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
 }
