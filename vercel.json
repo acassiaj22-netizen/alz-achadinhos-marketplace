@@ -1,4 +1,14 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/marketplace/kiwify/afiliado-expert-ase",
+      "destination": "/marketplace/kiwify/afiliado-expert-ase/index.html"
+    },
+    {
+      "source": "/marketplace/kiwify/afiliado-expert-ase/",
+      "destination": "/marketplace/kiwify/afiliado-expert-ase/index.html"
+    }
+  ]
 }
