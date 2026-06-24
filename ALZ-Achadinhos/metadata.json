@@ -1,6 +1,0 @@
-{
-  "name": "ALZ Achadinhos",
-  "description": "Landing page profissional e de alta conversão para o Grupo VIP de Achadinhos no WhatsApp.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
