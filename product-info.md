@@ -1,9 +1,16 @@
-# Afiliado Expert - ASE
+# Afiliado Expert ASE — Modelo 1 Final
 
-- **Plataforma**: KiWify
-- **Produto**: Afiliado Expert - ASE
-- **Objetivo da Página**: Ponte (Bridge Page) para tráfego do Meta Ads antes do checkout da KiWify.
+## Página principal
+marketplace/kiwify/afiliado-expert-ase/index.html
 
-## Links
-- **Link Principal (Checkout)**: https://pay.kiwify.com.br/75nRYO6?afid=IRDMdR0R
-- **Link Página de Vendas Oficial**: https://kiwify.app/btcHnUg?afid=IRDMdR0R
+## Link final após subir
+https://alz-achadinhos-marketplace.vercel.app/marketplace/kiwify/afiliado-expert-ase/index.html
+
+## Botão principal
+https://pay.kiwify.com.br/75nRYO6?afid=IRDMdR0R
+
+## Botão secundário
+https://kiwify.app/btcHnUg?afid=IRDMdR0R
+
+## Observação
+Este modelo usa material visual e evita destacar prints de comissão ou valores como promessa de resultado.
